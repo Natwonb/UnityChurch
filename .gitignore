@@ -1,0 +1,27 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# build
+dist/
+build/
+.vite/
+*.local
+
+# env / secrets
+.env
+.env.*
+!.env.example
+*.pem
+local.properties
+
+# Base44 local
+base44/.app.jsonc
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.log
+coverage/

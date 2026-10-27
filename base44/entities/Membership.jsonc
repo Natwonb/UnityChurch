@@ -1,0 +1,54 @@
+{
+  "name": "Membership",
+  "type": "object",
+  "properties": {
+    "church_id": {
+      "type": "string"
+    },
+    "member_key": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "admin",
+        "leader",
+        "member"
+      ],
+      "default": "member"
+    },
+    "department_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "pending"
+      ],
+      "default": "active"
+    },
+    "joined_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "church_id",
+    "member_key",
+    "name"
+  ],
+  "rls": {}
+}

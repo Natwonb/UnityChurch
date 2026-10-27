@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Royal purple and gold on ivory */
+    --background: 42 50% 96%;          /* ivory #FAF7F0 */
+    --foreground: 272 40% 12%;         /* deep plum ink */
+    --card: 0 0% 100%;
+    --card-foreground: 272 40% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 272 40% 12%;
+    --primary: 272 52% 34%;            /* royal purple #5B2A86 */
+    --primary-foreground: 42 60% 97%;
+    --secondary: 272 30% 93%;          /* soft lavender */
+    --secondary-foreground: 272 45% 24%;
+    --muted: 272 22% 93%;
+    --muted-foreground: 272 20% 35%;
+    --accent: 46 65% 52%;              /* gold #D4AF37 */
+    --accent-foreground: 272 45% 13%;
+    --destructive: 0 68% 40%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 272 22% 86%;
+    --input: 272 22% 86%;
+    --ring: 272 52% 34%;
+    --chart-1: 272 52% 34%;
+    --chart-2: 46 65% 52%;
+    --chart-3: 288 38% 52%;
+    --chart-4: 46 45% 68%;
+    --chart-5: 272 26% 66%;
+    --radius: 0.75rem;
+    --font-heading: 'Fraunces', ui-serif, Georgia, serif;
+    --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Fraunces', ui-serif, Georgia, serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --sidebar-background: 272 48% 22%; /* deep royal plum */
+    --sidebar-foreground: 42 40% 95%;
+    --sidebar-primary: 46 65% 55%;
+    --sidebar-primary-foreground: 272 48% 13%;
+    --sidebar-accent: 272 42% 31%;
+    --sidebar-accent-foreground: 42 40% 97%;
+    --sidebar-border: 272 34% 34%;
+    --sidebar-ring: 46 65% 55%;
+  }
+
+  .dark {
+    /* Deep plum surfaces with gold and lavender */
+    --background: 272 38% 8%;
+    --foreground: 42 35% 95%;
+    --card: 272 34% 12%;
+    --card-foreground: 42 35% 95%;
+    --popover: 272 34% 12%;
+    --popover-foreground: 42 35% 95%;
+    --primary: 46 65% 55%;             /* gold stands out on plum */
+    --primary-foreground: 272 48% 11%;
+    --secondary: 272 30% 19%;          /* lavender-grey */
+    --secondary-foreground: 42 35% 95%;
+    --muted: 272 26% 17%;
+    --muted-foreground: 42 22% 75%;
+    --accent: 272 42% 27%;             /* soft plum */
+    --accent-foreground: 42 35% 96%;
+    --destructive: 0 60% 42%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 272 25% 24%;
+    --input: 272 25% 24%;
+    --ring: 46 65% 55%;
+    --chart-1: 46 65% 55%;
+    --chart-2: 272 45% 64%;
+    --chart-3: 288 42% 66%;
+    --chart-4: 46 40% 74%;
+    --chart-5: 272 26% 76%;
+    --sidebar-background: 272 45% 10%;
+    --sidebar-foreground: 42 35% 95%;
+    --sidebar-primary: 46 65% 55%;
+    --sidebar-primary-foreground: 272 48% 11%;
+    --sidebar-accent: 272 40% 20%;
+    --sidebar-accent-foreground: 42 35% 96%;
+    --sidebar-border: 272 30% 22%;
+    --sidebar-ring: 46 65% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3 {
+    @apply font-heading;
+  }
+}
